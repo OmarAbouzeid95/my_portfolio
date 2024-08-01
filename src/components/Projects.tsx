@@ -15,7 +15,7 @@ const ProjectInfo: React.FC<Project & { last: boolean }> = ({
   last,
 }) => {
   return (
-    <div className={clsx("mb-24 lg:flex gap-12", last && "mb-0")}>
+    <div className={clsx("lg:flex gap-12", last ? "mb-0" : "mb-24")}>
       <div className="mb-12 lg:max-w-sm">
         <h4 className="font-semibold text-3xl mb-8 text-center md:text-left">
           {title}

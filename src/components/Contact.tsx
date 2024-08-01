@@ -31,22 +31,24 @@ const Contact = () => {
             omaradham1995@gmail.com
           </Link>
           <h2 className="font-semibold text-3xl text-center mb-6 md:text-left">
-            Online presence
+            My online presence
           </h2>
-          <Link
-            href="https://github.com/omarabouzeid95"
-            target="_blank"
-            className="flex justify-center items-center gap-2 mb-4">
-            <FontAwesomeIcon icon={faGithub} className="w-5" />
-            github.com/omarabouzeid95
-          </Link>
-          <Link
-            href="https://linkedin.com/in/omarabouzeidali"
-            target="_blank"
-            className="flex justify-center items-center gap-2 mb-2">
-            <FontAwesomeIcon icon={faLinkedin} className="w-5" />
-            linkedin.com/in/omarabouzeidali
-          </Link>
+          <div className="flex justify-center items-start gap-10 md:justify-start md:gap-6 md:ml-1 lg:ml-4">
+            <Link
+              href="https://github.com/omarabouzeid95"
+              target="_blank"
+              className="flex justify-center items-center gap-2 mb-4">
+              <FontAwesomeIcon icon={faGithub} className="w-6" />
+              {/* github.com/omarabouzeid95 */}
+            </Link>
+            <Link
+              href="https://linkedin.com/in/omarabouzeidali"
+              target="_blank"
+              className="flex justify-center items-center gap-2 mb-2">
+              <FontAwesomeIcon icon={faLinkedin} className="w-6" />
+              {/* linkedin.com/in/omarabouzeidali */}
+            </Link>
+          </div>
         </div>
       </div>
     </Section>

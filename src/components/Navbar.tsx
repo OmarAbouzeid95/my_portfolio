@@ -3,7 +3,7 @@ import { navLinks } from "../config/navLinks";
 
 const Navbar = () => {
   return (
-    <div className="hidden lg:flex items-center gap-10 fixed top-10 right-20 z-10">
+    <div className="hidden lg:hidden items-center gap-10 fixed top-10 right-20 z-10">
       {navLinks.map(({ name, href }, index) => (
         <Link
           href={href}
