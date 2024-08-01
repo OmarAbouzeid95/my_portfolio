@@ -39,7 +39,7 @@ const Resume = () => {
       <Link
         href="www.google.com"
         target="_blank"
-        className=" flex items-center justify-center gap-2 px-4 py-3 w-full border border-white rounded-sm hover:border-lightWhite text-white hover:text-lightWhite transition-all duration-700">
+        className="flex items-center justify-center gap-2 px-4 py-3 w-full border border-white rounded-sm hover:border-lightWhite text-white hover:text-lightWhite transition-all duration-700">
         <span>Detailed resume</span>
         <ArrowUpRight className="w-6" />
       </Link>

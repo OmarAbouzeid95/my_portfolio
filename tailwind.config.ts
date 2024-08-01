@@ -20,6 +20,18 @@ const config: Config = {
       textColor: {
         lightWhite: "#FFFFF0",
       },
+      ringColor: {
+        lightWhite: "#FFFFF0",
+      },
+      ringOffsetColor: {
+        transparent: "#292828",
+      },
+      boxShadowColor: {
+        lightWhite: "#FFFFF0",
+      },
+      boxShadow: {
+        all: "0px 0px 10px",
+      },
       backgroundImage: {
         "about-pic": "url('src/assets/about-photo-min.png')",
       },
