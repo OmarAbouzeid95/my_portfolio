@@ -5,7 +5,7 @@ export const navLinks: { name: string; href: string }[] = [
   },
   {
     name: "Projects",
-    href: "#",
+    href: "#projects",
   },
   {
     name: "Link1",

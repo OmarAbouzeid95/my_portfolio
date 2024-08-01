@@ -18,6 +18,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   const [showOverlay, setShowOverlay] = useState<boolean>(false);
+  const hamburgerRef = useRef<HTMLInputElement>(null);
 
   useEffect(() => {
     if (showOverlay) {
@@ -31,14 +32,14 @@ export default function RootLayout({
     <html lang="en">
       <body className={clsx(poppins.className, "bg-dark")}>
         <header className="relative lg:flex lg:justify-end lg:items-center lg:max-w-4xl lg:mx-auto">
-          <HamburgerIcon setShowOverlay={setShowOverlay} />
+          <HamburgerIcon setShowOverlay={setShowOverlay} ref={hamburgerRef} />
           <Navbar />
         </header>
         <main
           className={clsx("relative min-h-screen text-white overflow-hidden")}>
           {showOverlay && (
             <div className="fixed inset-0 z-30 animate-fadeIn bg-black bg-opacity-20">
-              <OverlayNav setShowOverlay={setShowOverlay} />
+              <OverlayNav setShowOverlay={setShowOverlay} ref={hamburgerRef} />
             </div>
           )}
           <section className={clsx(showOverlay && "blur-lg animate-fadeIn")}>

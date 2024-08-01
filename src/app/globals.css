@@ -11,7 +11,7 @@ html {
   margin: 0;
   background-color: "#4e4e4e";
   font-family: "Poppins", sans-serif;
-  scroll-behavior: "smooth";
+  scroll-behavior: smooth;
 }
 
 /* Hamburger icon */

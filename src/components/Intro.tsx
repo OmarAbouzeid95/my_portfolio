@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 const Intro = () => {
   return (
-    <div className="h-screen flex flex-col justify-center items-center font-extrabold p-10">
+    <div className="h-screen flex flex-col justify-center items-center font-extrabold p-6">
       <motion.div
         initial={{ opacity: 0, y: 100 }}
         whileInView={{ opacity: 1, y: 0 }}

@@ -71,7 +71,7 @@ const ProjectInfo: React.FC<Project> = ({
 
 const Projects = () => {
   return (
-    <Section title="Projects">
+    <Section title="Projects" id="projects">
       {projects.map(({ title, description, link, img, stack }) => (
         <ProjectInfo
           key={link}
