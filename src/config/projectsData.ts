@@ -1,12 +1,13 @@
-import peaceforwardImg from "../assets/projects/peaceforwardedit.png";
-import watchflexImg from "../assets/projects/watchflexedit.png";
-import stylehubImg from "../assets/projects/stylehub.png";
+import peaceforwardImg from "@/assets/projects/peaceforwardedit.png";
+import watchflexImg from "@/assets/projects/watchflexedit.png";
+import stylehubImg from "@/assets/projects/stylehub.png";
+import { StaticImageData } from "next/image";
 
 export type Project = {
   title: string;
   description: string;
   link: string;
-  img: string;
+  img: StaticImageData;
 };
 
 export const projects: Project[] = [

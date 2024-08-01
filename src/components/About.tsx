@@ -36,7 +36,7 @@ const About = () => {
           <Image
             src={aboutImg}
             alt="Personal photo of Omar in the mountains"
-            style={{ objectPosition: "bottom", objectFit: "cover" }}
+            style={{ objectPosition: "center", objectFit: "cover" }}
             fill
           />
         </div>

@@ -1,5 +1,4 @@
 "use client";
-import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import React, { useState, useEffect, useRef } from "react";
 import HamburgerIcon from "@/components/HamburgerIcon";
@@ -12,11 +11,6 @@ const poppins = Poppins({
   subsets: ["latin"],
   weight: ["400", "500", "600", "700", "800", "900"],
 });
-
-export const metadata: Metadata = {
-  title: "Omar's Portfolio",
-  description: "Personal Portfolio of Omar Ali",
-};
 
 export default function RootLayout({
   children,
@@ -35,7 +29,7 @@ export default function RootLayout({
 
   return (
     <html lang="en">
-      <body className={poppins.className}>
+      <body className={clsx(poppins.className, "bg-dark")}>
         <header className="relative lg:flex lg:justify-end lg:items-center lg:max-w-4xl lg:mx-auto">
           <HamburgerIcon setShowOverlay={setShowOverlay} />
           <Navbar />
