@@ -5,6 +5,12 @@ import Link from "next/link";
 import Image from "next/image";
 import { logos } from "@/config/logos";
 import clsx from "clsx";
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger,
+} from "@/components/ui/tooltip";
 
 const ProjectInfo: React.FC<Project & { last: boolean }> = ({
   title,
@@ -24,14 +30,26 @@ const ProjectInfo: React.FC<Project & { last: boolean }> = ({
           <h4 className="font-semibold mb-2">Tech Stack</h4>
           <div className="flex gap-4 items-center">
             {stack.map((logo, index) => (
-              <Image
-                key={index}
-                src={logos[logo as keyof typeof logos]}
-                alt="tech stack logo"
-                width={30}
-                height={30}
-                className={clsx(index === stack.length - 1 && "-ml-2")}
-              />
+              <TooltipProvider delayDuration={50}>
+                <Tooltip>
+                  <TooltipTrigger>
+                    <Image
+                      key={index}
+                      src={logos[logo as keyof typeof logos].svg}
+                      alt="tech stack logo"
+                      width={30}
+                      height={30}
+                      className={clsx(
+                        logos[logo as keyof typeof logos].name === "MongoDB" &&
+                          "-ml-2"
+                      )}
+                    />
+                  </TooltipTrigger>
+                  <TooltipContent>
+                    <p>{logos[logo as keyof typeof logos].name}</p>
+                  </TooltipContent>
+                </Tooltip>
+              </TooltipProvider>
             ))}
           </div>
         </div>
@@ -54,14 +72,26 @@ const ProjectInfo: React.FC<Project & { last: boolean }> = ({
         <h4 className="font-semibold mb-2">Tech Stack</h4>
         <div className="flex gap-4 items-center">
           {stack.map((logo, index) => (
-            <Image
-              key={index}
-              src={logos[logo as keyof typeof logos]}
-              alt="tech stack logo"
-              width={30}
-              height={30}
-              className={clsx(index === stack.length - 1 && "-ml-2")}
-            />
+            <TooltipProvider delayDuration={50}>
+              <Tooltip>
+                <TooltipTrigger>
+                  <Image
+                    key={index}
+                    src={logos[logo as keyof typeof logos].svg}
+                    alt="tech stack logo"
+                    width={30}
+                    height={30}
+                    className={clsx(
+                      logos[logo as keyof typeof logos].name === "MongoDB" &&
+                        "-ml-2"
+                    )}
+                  />
+                </TooltipTrigger>
+                <TooltipContent>
+                  <p>{logos[logo as keyof typeof logos].name}</p>
+                </TooltipContent>
+              </Tooltip>
+            </TooltipProvider>
           ))}
         </div>
       </div>

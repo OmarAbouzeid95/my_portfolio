@@ -11,15 +11,48 @@ import react from "@/assets/logos/react-2.svg";
 import express from "@/assets/logos/expressjs-icon.svg";
 
 export const logos = {
-  nextjs: nextjs,
-  mysql: mysql,
-  tailwindcss: tailwindcss,
-  wordpress: wordpress,
-  typescript: typescript,
-  mongodb: mongodb,
-  nodejs: nodejs,
-  css3: css3,
-  sass: sass,
-  react: react,
-  express: express,
+  nextjs: {
+    name: "Next.js",
+    svg: nextjs,
+  },
+  mysql: {
+    name: "MySQL",
+    svg: mysql,
+  },
+  tailwindcss: {
+    name: "TailwindCSS",
+    svg: tailwindcss,
+  },
+  wordpress: {
+    name: "WordPress",
+    svg: wordpress,
+  },
+  typescript: {
+    name: "Typescript",
+    svg: typescript,
+  },
+  mongodb: {
+    name: "MongoDB",
+    svg: mongodb,
+  },
+  nodejs: {
+    name: "Node.js",
+    svg: nodejs,
+  },
+  css3: {
+    name: "CSS3",
+    svg: css3,
+  },
+  sass: {
+    name: "Sass",
+    svg: sass,
+  },
+  react: {
+    name: "React.js",
+    svg: react,
+  },
+  express: {
+    name: "Express.js",
+    svg: express,
+  },
 };
