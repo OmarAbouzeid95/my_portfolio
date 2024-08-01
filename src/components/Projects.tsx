@@ -6,15 +6,16 @@ import Image from "next/image";
 import { logos } from "@/config/logos";
 import clsx from "clsx";
 
-const ProjectInfo: React.FC<Project> = ({
+const ProjectInfo: React.FC<Project & { last: boolean }> = ({
   title,
   description,
   link,
   img,
   stack,
+  last,
 }) => {
   return (
-    <div className={clsx("mb-24 lg:flex gap-12")}>
+    <div className={clsx("mb-24 lg:flex gap-12", last && "mb-0")}>
       <div className="mb-12 lg:max-w-sm">
         <h4 className="font-semibold text-3xl mb-8 text-center md:text-left">
           {title}
@@ -72,7 +73,7 @@ const ProjectInfo: React.FC<Project> = ({
 const Projects = () => {
   return (
     <Section title="Projects" id="projects">
-      {projects.map(({ title, description, link, img, stack }) => (
+      {projects.map(({ title, description, link, img, stack }, index) => (
         <ProjectInfo
           key={link}
           title={title}
@@ -80,6 +81,7 @@ const Projects = () => {
           link={link}
           img={img}
           stack={stack}
+          last={index === projects.length - 1}
         />
       ))}
     </Section>

@@ -10,6 +10,13 @@ const config: Config = {
     extend: {
       backgroundColor: {
         dark: "#4E4E4E",
+        lightWhite: "#FFFFF0",
+      },
+      borderColor: {
+        lightWhite: "#FFFFF0",
+      },
+      textColor: {
+        lightWhite: "#FFFFF0",
       },
       backgroundImage: {
         "about-pic": "url('src/assets/about-photo-min.png')",
