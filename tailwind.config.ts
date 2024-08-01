@@ -9,11 +9,13 @@ const config: Config = {
   theme: {
     extend: {
       backgroundColor: {
-        dark: "#4E4E4E",
+        dark: "#292828",
+        lightDark: "#4E4E4E",
         lightWhite: "#FFFFF0",
       },
       borderColor: {
         lightWhite: "#FFFFF0",
+        lightDark: "#4E4E4E",
       },
       textColor: {
         lightWhite: "#FFFFF0",

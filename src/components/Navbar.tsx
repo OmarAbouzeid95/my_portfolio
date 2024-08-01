@@ -5,7 +5,10 @@ const Navbar = () => {
   return (
     <div className="hidden lg:flex items-center gap-10 fixed top-10 right-20 z-10">
       {navLinks.map(({ name, href }, index) => (
-        <Link href={href} key={index} className="text-lg text-white">
+        <Link
+          href={href}
+          key={index}
+          className="text-lg text-white hover:text-lightWhite transition-all duration-500">
           {name}
         </Link>
       ))}
