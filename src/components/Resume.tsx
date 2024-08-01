@@ -6,15 +6,6 @@ import Link from "next/link";
 const Resume = () => {
   return (
     <Section title="Resume" id="resume">
-      {/* <div className="absolute top-0 right-0 left-0 p-16 flex items-center justify-end">
-        <Link
-          href="www.google.com"
-          target="_blank"
-          className="mt flex items-center justify-center gap-2 px-4 py-3 border border-white rounded-sm hover:border-lightWhite text-white hover:text-lightWhite transition-all duration-500">
-          <span>Detailed resume</span>
-          <ArrowUpRight className="w-6" />
-        </Link>
-      </div> */}
       <ol className="relative border-s mb-4 border-lightWhite">
         {resume.map((exp, index) => (
           <li className="mb-10 ms-4" key={index}>
@@ -39,9 +30,9 @@ const Resume = () => {
       <Link
         href="www.google.com"
         target="_blank"
-        className="flex items-center justify-center gap-2 px-4 py-3 w-full border border-white rounded-sm hover:border-lightWhite text-white hover:text-lightWhite transition-all duration-700">
+        className="flex items-center justify-center gap-2 px-4 py-3 w-full border border-white rounded-md hover:border-lightWhite text-white hover:text-lightWhite transition-all duration-700">
         <span>Detailed resume</span>
-        <ArrowUpRight className="w-6" />
+        <ArrowUpRight className="w-4" />
       </Link>
     </Section>
   );

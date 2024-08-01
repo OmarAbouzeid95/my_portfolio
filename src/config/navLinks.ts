@@ -12,7 +12,7 @@ export const navLinks: { name: string; href: string }[] = [
     href: "#resume",
   },
   {
-    name: "Link1",
-    href: "#",
+    name: "Contact",
+    href: "#contact",
   },
 ];

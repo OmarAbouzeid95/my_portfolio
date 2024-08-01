@@ -10,13 +10,6 @@ const config = {
   ],
   prefix: "",
   theme: {
-    container: {
-      center: true,
-      padding: "2rem",
-      screens: {
-        "2xl": "1400px",
-      },
-    },
     extend: {
       backgroundColor: {
         dark: "#292828",
@@ -47,11 +40,6 @@ const config = {
       },
       transitionTimingFunction: {
         "cubic-bezier": "cubic-bezier(0.455, 0.03, 0.515, 0.955)",
-      },
-      borderRadius: {
-        lg: "var(--radius)",
-        md: "calc(var(--radius) - 2px)",
-        sm: "calc(var(--radius) - 4px)",
       },
       keyframes: {
         "accordion-down": {

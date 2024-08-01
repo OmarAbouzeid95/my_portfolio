@@ -49,13 +49,16 @@ const ContactForm = () => {
       setMessageInfo({
         status: "success",
         message:
-          "Thank you for your message, I'll get back to you as soon as possible &#128522;",
+          "Thank you for your message, I'll get back to you as soon as possible.",
       });
     }
     setLoading(false);
   };
   return (
-    <>
+    <div>
+      <h2 className="font-semibold text-3xl text-center mb-6 md:text-left">
+        Drop me a message
+      </h2>
       {!messageSent && (
         <form onSubmit={handleSubmit(onSubmit)}>
           <label htmlFor="name" className={clsx("block mb-2 text-sm")}>
@@ -100,17 +103,17 @@ const ContactForm = () => {
             Message <span className="text-primary">*</span>
           </label>
           <Textarea
-            className={clsx("mb-4", errors?.email?.type && "ring-red-500")}
+            className={clsx("mb-8", errors?.email?.type && "ring-red-500")}
             id="message"
             {...register("message", { required: true })}
           />
           {errors?.message?.type === "required" && (
-            <p className={clsx("text-red-500 -mt-2 mb-4 text-left text-sm")}>
+            <p className={clsx("text-red-500 -mt-4 mb-4 text-left text-sm")}>
               {requiredField}
             </p>
           )}
           <Button
-            className="flex items-center justify-center gap-2 px-4 py-3 w-full border border-white rounded-sm hover:border-lightWhite text-white hover:text-lightWhite transition-all duration-700"
+            className="flex items-center justify-center gap-2 px-4 py-5 w-full border border-white rounded-md hover:border-lightWhite text-white hover:text-lightWhite transition-all duration-700"
             disabled={loading}>
             {loading ? (
               <Loader2 className="animate-spin infinite" />
@@ -129,7 +132,7 @@ const ContactForm = () => {
           {messageInfo.message}
         </motion.p>
       )}
-    </>
+    </div>
   );
 };
 
