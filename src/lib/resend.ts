@@ -1,3 +1,4 @@
+"use server";
 import { Resend } from "resend";
 import { ContactFormProps } from "@/components/ContactForm";
 import ContactFormMessage from "@/components/ContactFormMessage";

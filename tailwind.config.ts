@@ -1,12 +1,22 @@
 import type { Config } from "tailwindcss";
 
-const config: Config = {
+const config = {
+  darkMode: ["class"],
   content: [
-    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./pages/**/*.{ts,tsx}",
+    "./components/**/*.{ts,tsx}",
+    "./app/**/*.{ts,tsx}",
+    "./src/**/*.{ts,tsx}",
   ],
+  prefix: "",
   theme: {
+    container: {
+      center: true,
+      padding: "2rem",
+      screens: {
+        "2xl": "1400px",
+      },
+    },
     extend: {
       backgroundColor: {
         dark: "#292828",
@@ -35,7 +45,23 @@ const config: Config = {
       backgroundImage: {
         "about-pic": "url('src/assets/about-photo-min.png')",
       },
+      transitionTimingFunction: {
+        "cubic-bezier": "cubic-bezier(0.455, 0.03, 0.515, 0.955)",
+      },
+      borderRadius: {
+        lg: "var(--radius)",
+        md: "calc(var(--radius) - 2px)",
+        sm: "calc(var(--radius) - 4px)",
+      },
       keyframes: {
+        "accordion-down": {
+          from: { height: "0" },
+          to: { height: "var(--radix-accordion-content-height)" },
+        },
+        "accordion-up": {
+          from: { height: "var(--radix-accordion-content-height)" },
+          to: { height: "0" },
+        },
         fadeIn: {
           "0%": { opacity: "0" },
           "50%": { opacity: "0.7" },
@@ -50,15 +76,17 @@ const config: Config = {
           },
         },
       },
-      transitionTimingFunction: {
-        "cubic-bezier": "cubic-bezier(0.455, 0.03, 0.515, 0.955)",
-      },
       animation: {
         fadeIn: "fadeIn 0.1s ease-in-out",
         rotate: "rotate 15s linear infinite",
       },
+      transitionDuration: {
+        "1250": "1250ms",
+        "600": "600ms",
+      },
     },
   },
-  plugins: [],
-};
+  plugins: [require("tailwindcss-animate")],
+} satisfies Config;
+
 export default config;

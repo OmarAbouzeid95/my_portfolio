@@ -46,7 +46,7 @@ const ProjectInfo: React.FC<Project & { last: boolean }> = ({
           alt={`${title} webpage screenshot`}
           width={1200}
           height={675}
-          className="w-full h-auto lg:hover:scale-105 lg:bg-black/10 lg:transition-all lg:duration-[600ms]"
+          className="w-full h-auto lg:hover:scale-105 lg:bg-black/10 lg:transition-all lg:duration-600"
           style={{ maxWidth: "100%", height: "auto", objectFit: "cover" }}
         />
       </Link>
