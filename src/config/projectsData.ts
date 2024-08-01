@@ -8,6 +8,7 @@ export type Project = {
   description: string;
   link: string;
   img: StaticImageData;
+  stack: string[];
 };
 
 export const projects: Project[] = [
@@ -17,6 +18,7 @@ export const projects: Project[] = [
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet sapiente dolorem laudantium ex ipsam porro velit libero officia atque voluptatem quibusdam cupiditate nostrum praesentium molestiae ducimus quidem, expedita ab. Porro quaerat dolor harum dignissimos, rem aut saepe officia eos blanditiis at possimus nobis aliquam enim. Aspernatur voluptas ratione officiis ut?",
     link: "https://peaceforward.vercel.app",
     img: peaceforwardImg,
+    stack: ["nextjs", "typescript", "tailwindcss", "wordpress", "mysql"],
   },
   {
     title: "WatchFlex",
@@ -24,6 +26,7 @@ export const projects: Project[] = [
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet sapiente dolorem laudantium ex ipsam porro velit libero officia atque voluptatem quibusdam cupiditate nostrum praesentium molestiae ducimus quidem, expedita ab. Porro quaerat dolor harum dignissimos, rem aut saepe officia eos blanditiis at possimus nobis aliquam enim. Aspernatur voluptas ratione officiis ut?",
     link: "https://watchflex.onrender.com/",
     img: watchflexImg,
+    stack: ["react", "sass", "nodejs", "express", "mongodb"],
   },
   {
     title: "Style Hub",
@@ -31,5 +34,6 @@ export const projects: Project[] = [
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet sapiente dolorem laudantium ex ipsam porro velit libero officia atque voluptatem quibusdam cupiditate nostrum praesentium molestiae ducimus quidem, expedita ab. Porro quaerat dolor harum dignissimos, rem aut saepe officia eos blanditiis at possimus nobis aliquam enim. Aspernatur voluptas ratione officiis ut?",
     link: "https://style-hub.onrender.com",
     img: stylehubImg,
+    stack: ["react", "css3", "nodejs", "express", "mongodb"],
   },
 ];
