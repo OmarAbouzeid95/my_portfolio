@@ -55,7 +55,7 @@ const ContactForm = () => {
     setLoading(false);
   };
   return (
-    <div>
+    <div className="grow">
       <h2 className="font-semibold text-3xl text-center mb-6 md:text-left">
         Drop me a message
       </h2>

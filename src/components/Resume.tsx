@@ -28,7 +28,7 @@ const Resume = () => {
         ))}
       </ol>
       <Link
-        href="www.google.com"
+        href={process.env.RESUME_LINK as string}
         target="_blank"
         className="flex items-center justify-center gap-2 px-4 py-3 w-full border border-white rounded-md hover:border-lightWhite text-white hover:text-lightWhite transition-all duration-700">
         <span>Detailed resume</span>

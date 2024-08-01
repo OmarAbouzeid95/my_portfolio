@@ -1,7 +1,10 @@
 import Section from "./Section";
 import ContactForm from "./ContactForm";
 import Link from "next/link";
-import { Mail } from "lucide-react";
+import { Mail, Github, Linkedin } from "lucide-react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons/faEnvelope";
+import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
 const Contact = () => {
   return (
@@ -21,9 +24,28 @@ const Contact = () => {
           </h2>
           <Link
             href="mailto:omaradham1995@gmail.com"
-            className="flex justify-center items-center gap-2">
+            target="_blank"
+            className="flex justify-center items-center gap-2 mb-10">
+            {/* <FontAwesomeIcon icon={faEnvelope} size="1x" className="w-5" /> */}
             <Mail />
             omaradham1995@gmail.com
+          </Link>
+          <h2 className="font-semibold text-3xl text-center mb-6 md:text-left">
+            Online presence
+          </h2>
+          <Link
+            href="https://github.com/omarabouzeid95"
+            target="_blank"
+            className="flex justify-center items-center gap-2 mb-4">
+            <FontAwesomeIcon icon={faGithub} className="w-5" />
+            github.com/omarabouzeid95
+          </Link>
+          <Link
+            href="https://linkedin.com/in/omarabouzeidali"
+            target="_blank"
+            className="flex justify-center items-center gap-2 mb-2">
+            <FontAwesomeIcon icon={faLinkedin} className="w-5" />
+            linkedin.com/in/omarabouzeidali
           </Link>
         </div>
       </div>
