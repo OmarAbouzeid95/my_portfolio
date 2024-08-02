@@ -10,10 +10,10 @@ const Intro = () => {
         transition={{ duration: 1.5 }}
         viewport={{ once: true }}>
         <h1 className="text-4xl msm:text-5xl mb-4 w-fit md:text-6xl md:mb-6 xl:text-7xl">
-          Hi, I'm Omar
+          Hi, I&apos;m Omar
         </h1>
         <h2 className="text-3xl msm:text-4xl w-fit md:text-5xl md:mb-6 xl:text-6xl">
-          I'm a Full Stack Developer
+          I&apos;m a Full Stack Developer
         </h2>
       </motion.div>
     </div>

@@ -19,4 +19,6 @@ const HamburgerIcon = forwardRef<
   );
 });
 
+HamburgerIcon.displayName = "HamburgerIcon";
+
 export default HamburgerIcon;

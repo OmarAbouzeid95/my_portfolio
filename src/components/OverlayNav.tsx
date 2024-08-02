@@ -29,4 +29,6 @@ const OverlayNav = forwardRef<
   );
 });
 
+OverlayNav.displayName = "OverlayNav";
+
 export default OverlayNav;
