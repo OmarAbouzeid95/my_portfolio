@@ -5,8 +5,8 @@ export const resume = [
     start: "Aug 2023",
     end: "Dec 2023",
     desc: [
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse porttitor rhoncus diam, non sodales leo hendrerit ac. Maecenas et mauris.",
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse porttitor rhoncus diam, non sodales leo hendrerit ac. Maecenas et mauris.",
+      "Integrated Stripe API using React.js and Node.js, enabling $0.1M in monthly bookings through efficient payment processing.",
+      "Enhanced monitoring and reduced navigation errors by implementing Firestore listeners and refining mobile app navigation with React Navigation.",
     ],
   },
   {
@@ -15,8 +15,8 @@ export const resume = [
     start: "Jun 2021",
     end: "Aug 2022",
     desc: [
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse porttitor rhoncus diam, non sodales leo hendrerit ac. Maecenas et mauris.",
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse porttitor rhoncus diam, non sodales leo hendrerit ac. Maecenas et mauris.",
+      "Developed new features and optimized web performance using React.js, improving user satisfaction by 22% and reducing load times by 10%.",
+      "Designed RESTful APIs with Node.js/Express.js, enhancing transaction flow and integration, while collaborating closely with internal teams to meet product needs.",
     ],
   },
   {
@@ -25,8 +25,8 @@ export const resume = [
     start: "Jan 2020",
     end: "May 2021",
     desc: [
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse porttitor rhoncus diam, non sodales leo hendrerit ac. Maecenas et mauris.",
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse porttitor rhoncus diam, non sodales leo hendrerit ac. Maecenas et mauris.",
+      "Improved user engagement and reduced page load times by 15% through advanced UI components in React.js/Redux and Redis caching.",
+      "Enhanced data visualization capabilities and application scalability by integrating Chart.js with Google Charts and migrating to a modern React architecture.",
     ],
   },
 ];

@@ -42,7 +42,7 @@ export default function RootLayout({
               <OverlayNav setShowOverlay={setShowOverlay} ref={hamburgerRef} />
             </div>
           )}
-          <section className={clsx(showOverlay && "blur-lg animate-fadeIn")}>
+          <section className={clsx(showOverlay && "blur-xl animate-fadeIn")}>
             {children}
           </section>
         </main>

@@ -31,7 +31,7 @@ const About = () => {
     <Section title="About me" id="about_me">
       <div
         ref={pic}
-        className="mx-auto w-72 h-72 mb-12 transition-all duration-1250 ease-cubic-bezier infinite relative overflow-hidden md:float-right md:ml-8 md:mb-8">
+        className="mx-auto w-64 h-64 mb-12 transition-all duration-1250 ease-cubic-bezier infinite relative overflow-hidden md:float-right md:ml-8 md:mb-8">
         <div className="absolute inset-0 z-10">
           <Image
             src={aboutImg}
@@ -41,19 +41,16 @@ const About = () => {
           />
         </div>
       </div>
+      <p className="px-4 mb-4 md:px-0 md:text-lg">
+        I transitioned from a career in Mechatronics Engineering to Software
+        Development, driven by a passion for bringing ideas and designs to life.
+        My engineering background enhances my projects with a unique blend of
+        problem solving, precision, and creativity. I thrive on creating digital
+        experiences that add tangible value to users.
+      </p>
       <p className="px-4 md:px-0 md:text-lg">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, maxime!
-        Ipsa ullam distinctio, architecto reiciendis maiores natus rerum
-        expedita vitae facere adipisci pariatur blanditiis voluptates nulla
-        accusantium quasi reprehenderit corrupti voluptatibus ad quae deserunt
-        esse saepe! Vero non est quia eligendi laboriosam maiores, possimus quod
-        a deleniti asperiores voluptatibus praesentium nulla consequatur error
-        maxime, illum ex nisi minus pariatur reiciendis inventore fugiat.
-        Eligendi tenetur recusandae quia nulla animi modi, sed dolorum
-        distinctio vero mollitia sit aspernatur ipsam blanditiis, quidem aliquid
-        nam. Est doloribus voluptatibus ipsum fuga magnam omnis assumenda a
-        architecto? Officia odit laboriosam nostrum modi iusto ullam veniam
-        natus.
+        Outside of coding, I unwind by playing Volleyball and Padel, activities
+        that sharpen my teamwork skills and keep me active.
       </p>
     </Section>
   );

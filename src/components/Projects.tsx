@@ -18,6 +18,7 @@ const ProjectInfo: React.FC<Project & { last: boolean }> = ({
   link,
   img,
   stack,
+  demo,
   last,
 }) => {
   return (
@@ -53,7 +54,14 @@ const ProjectInfo: React.FC<Project & { last: boolean }> = ({
             ))}
           </div>
         </div>
-        <p className="hidden md:block md:text-lg">{description}</p>
+        <p className="hidden mb-4 md:block md:text-lg">{description}</p>
+        {demo && (
+          <div className="hidden md:block">
+            <h4 className="font-semibold mb-2">Demo account</h4>
+            <p className="mb-2">username: {demo.username}</p>
+            <p className="mb-2">password: {demo.password}</p>
+          </div>
+        )}
       </div>
       <Link
         href={link}
@@ -95,7 +103,14 @@ const ProjectInfo: React.FC<Project & { last: boolean }> = ({
           ))}
         </div>
       </div>
-      <p className="md:text-lg md:hidden">{description}</p>
+      <p className="md:text-lg mb-4 md:hidden">{description}</p>
+      {demo && (
+        <div className="md:hidden">
+          <h4 className="font-semibold mb-2">Demo account</h4>
+          <p className="mb-2">username: {demo.username}</p>
+          <p className="mb-2">password: {demo.password}</p>
+        </div>
+      )}
     </div>
   );
 };
@@ -103,7 +118,7 @@ const ProjectInfo: React.FC<Project & { last: boolean }> = ({
 const Projects = () => {
   return (
     <Section title="Projects" id="projects">
-      {projects.map(({ title, description, link, img, stack }, index) => (
+      {projects.map(({ title, description, link, img, demo, stack }, index) => (
         <ProjectInfo
           key={link}
           title={title}
@@ -111,6 +126,7 @@ const Projects = () => {
           link={link}
           img={img}
           stack={stack}
+          demo={demo}
           last={index === projects.length - 1}
         />
       ))}
