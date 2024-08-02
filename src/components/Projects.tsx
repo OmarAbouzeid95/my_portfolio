@@ -22,7 +22,7 @@ const ProjectInfo: React.FC<Project & { last: boolean }> = ({
 }) => {
   return (
     <div className={clsx("lg:flex gap-12", last ? "mb-0" : "mb-24")}>
-      <div className="mb-12 lg:max-w-sm">
+      <div className="mb-12 lg:max-w-sm lg:grow">
         <h4 className="font-semibold text-3xl mb-8 text-center md:text-left">
           {title}
         </h4>
@@ -30,7 +30,7 @@ const ProjectInfo: React.FC<Project & { last: boolean }> = ({
           <h4 className="font-semibold mb-2">Tech Stack</h4>
           <div className="flex gap-4 items-center">
             {stack.map((logo, index) => (
-              <TooltipProvider delayDuration={50}>
+              <TooltipProvider delayDuration={50} key={index}>
                 <Tooltip>
                   <TooltipTrigger>
                     <Image
@@ -58,7 +58,7 @@ const ProjectInfo: React.FC<Project & { last: boolean }> = ({
       <Link
         href={link}
         target="_blank"
-        className="block w-full relative mb-12 rounded-md overflow-hidden">
+        className="block max-h-80 md:max-h-[400px] lg:w-96 lg:h-[355px] relative mb-12 rounded-md overflow-hidden">
         <Image
           src={img}
           alt={`${title} webpage screenshot`}
@@ -72,7 +72,7 @@ const ProjectInfo: React.FC<Project & { last: boolean }> = ({
         <h4 className="font-semibold mb-2">Tech Stack</h4>
         <div className="flex gap-4 items-center">
           {stack.map((logo, index) => (
-            <TooltipProvider delayDuration={50}>
+            <TooltipProvider delayDuration={50} key={index}>
               <Tooltip>
                 <TooltipTrigger>
                   <Image
