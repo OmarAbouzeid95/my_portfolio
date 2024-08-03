@@ -19,7 +19,7 @@ const OverlayNav = forwardRef<
           <Link
             href={href}
             key={index}
-            className="text-4xl font-semibold mb-16 block text-white hover:text-lightWhite transition-all duration-500"
+            className="w-fit text-4xl font-semibold mb-16 block text-white hover:text-lightWhite transition-all duration-500"
             onClick={handleClick}>
             {name}
           </Link>
