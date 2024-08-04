@@ -108,12 +108,12 @@ const ContactForm = () => {
             {...register("message", { required: true })}
           />
           {errors?.message?.type === "required" && (
-            <p className={clsx("text-red-500 -mt-4 mb-4 text-left text-sm")}>
+            <p className={clsx("text-red-500 -mt-6 mb-4 text-left text-sm")}>
               {requiredField}
             </p>
           )}
           <Button
-            className="flex items-center justify-center gap-2 px-4 py-5 w-full border border-white rounded-md hover:border-lightWhite text-white hover:text-lightWhite transition-all duration-700"
+            className="flex items-center justify-center text-base font-normal gap-2 px-4 py-5 w-full border border-white rounded-md hover:border-lightWhite text-white hover:text-lightWhite transition-all duration-700"
             disabled={loading}>
             {loading ? (
               <Loader2 className="animate-spin infinite" />

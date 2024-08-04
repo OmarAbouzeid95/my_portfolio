@@ -1,7 +1,7 @@
 export const resume = [
   {
     company: "Alibi",
-    title: "Full Stack Engineer Intern",
+    title: "Full Stack Developer Intern",
     start: "Aug 2023",
     end: "Dec 2023",
     desc: [
@@ -11,7 +11,7 @@ export const resume = [
   },
   {
     company: "Raya IT",
-    title: "Full Stack Engineer",
+    title: "Full Stack Developer",
     start: "Jun 2021",
     end: "Aug 2022",
     desc: [
@@ -21,7 +21,7 @@ export const resume = [
   },
   {
     company: "Gemma",
-    title: "Frontend Engineer",
+    title: "Frontend Developer",
     start: "Jan 2020",
     end: "May 2021",
     desc: [

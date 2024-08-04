@@ -13,13 +13,13 @@ const OverlayNav = forwardRef<
   }, [ref]);
 
   return (
-    <div className="p-20">
+    <div className="flex flex-col w-full h-full justify-center pl-20 lg:items-center lg:pl-0 lg:-ml-8">
       {navLinks.map(({ name, href }, index) => {
         return (
           <Link
             href={href}
             key={index}
-            className="w-fit text-4xl font-semibold mb-16 block text-white hover:text-lightWhite transition-all duration-500"
+            className="w-24 text-4xl lg:text-5xl font-semibold mb-16 block text-white hover:text-lightWhite transition-all duration-500"
             onClick={handleClick}>
             {name}
           </Link>
