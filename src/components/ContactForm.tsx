@@ -49,7 +49,7 @@ const ContactForm = () => {
       setMessageInfo({
         status: "success",
         message:
-          "Thank you for your message, I'll get back to you as soon as possible.",
+          "Thank you for reaching out! I appreciate your interest and will get back to you as soon as possible.",
       });
     }
     setLoading(false);
@@ -128,7 +128,8 @@ const ContactForm = () => {
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 1.5 }}
-          viewport={{ once: true }}>
+          viewport={{ once: true }}
+          className="max-w-sm">
           {messageInfo.message}
         </motion.p>
       )}
