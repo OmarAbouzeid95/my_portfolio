@@ -3,9 +3,9 @@ import { resume } from "@/config/resumeData";
 import { Minus, ArrowUpRight } from "lucide-react";
 import Link from "next/link";
 
-const Resume = () => {
+const Experience = () => {
   return (
-    <Section title="Resume" id="resume">
+    <Section title="Experience" id="experience">
       <ol className="relative border-s mb-4 border-lightWhite">
         {resume.map((exp, index) => (
           <li className="mb-10 ms-4" key={index}>
@@ -31,11 +31,11 @@ const Resume = () => {
         href={process.env.RESUME_LINK as string}
         target="_blank"
         className="flex items-center justify-center gap-2 px-4 py-3 w-full border border-white rounded-md hover:border-lightWhite text-white hover:text-lightWhite transition-all duration-700">
-        <span>Detailed resume</span>
+        <span>Resume</span>
         <ArrowUpRight className="w-4" />
       </Link>
     </Section>
   );
 };
 
-export default Resume;
+export default Experience;

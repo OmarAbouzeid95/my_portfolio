@@ -20,7 +20,7 @@ export const projects: Project[] = [
     title: "Peace Forward",
     description:
       "PeaceForward is an NGO aimed at supporting communities recovering from conflict through various empowerment initiatives. The website effectively highlights their mission, promotes engagement, and facilitates donations, contributing to over $15,000 raised for global humanitarian aid.",
-    link: "https://peaceforward.vercel.app",
+    link: "https://peaceforwardcanada.org",
     img: peaceforwardImg,
     stack: ["nextjs", "typescript", "tailwindcss", "wordpress", "mysql"],
   },

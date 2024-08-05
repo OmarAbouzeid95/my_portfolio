@@ -8,8 +8,8 @@ export const navLinks: { name: string; href: string }[] = [
     href: "#projects",
   },
   {
-    name: "Resume",
-    href: "#resume",
+    name: "Experience",
+    href: "#experience",
   },
   {
     name: "Contact",
