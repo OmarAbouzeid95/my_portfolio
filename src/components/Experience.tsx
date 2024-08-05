@@ -16,7 +16,7 @@ const Experience = () => {
                 {exp.start} <Minus className="inline w-4" /> {exp.end}
               </time>
             </div>
-            <h3 className="text-lg font-semibold text-white mb-2">
+            <h3 className="text-xl font-semibold text-white mb-2">
               {exp.title}
             </h3>
             {exp.desc.map((txt, index) => (

@@ -32,7 +32,7 @@ const About = () => {
       <div
         ref={pic}
         className="mx-auto w-64 h-64 mb-12 transition-all duration-1250 ease-cubic-bezier infinite relative overflow-hidden md:float-right md:ml-8 md:mb-8">
-        <div className="absolute inset-0 z-10">
+        <div className="absolute inset-0 z-5">
           <Image
             src={aboutImg}
             alt="Personal photo of Omar in the mountains"
