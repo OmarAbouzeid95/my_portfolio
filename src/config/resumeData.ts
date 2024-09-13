@@ -1,7 +1,17 @@
 export const resume = [
   {
+    company: "Stikbook",
+    title: "Full Stack Engineer",
+    start: "Aug 2024",
+    end: "Present",
+    desc: [
+      "Designed and implemented a scalable backend architecture using AWS services (EC2, S3, RDS) and microservices with Spring Boot, enhancing system reliability, security (JWTs for authentication), and content management.",
+      "Improved media upload service efficiency by integrating S3 for storage and RDS with PostgreSQL for metadata, reducing storage latency by 20%, and optimized infinite scrolling performance by 15% with FlashLists and memoization.",
+    ],
+  },
+  {
     company: "Alibi",
-    title: "Full Stack Developer Intern",
+    title: "Full Stack Engineer Intern",
     start: "Aug 2023",
     end: "Dec 2023",
     desc: [
@@ -11,7 +21,7 @@ export const resume = [
   },
   {
     company: "Raya IT",
-    title: "Full Stack Developer",
+    title: "Full Stack Engineer",
     start: "Jun 2021",
     end: "Aug 2022",
     desc: [
@@ -19,14 +29,14 @@ export const resume = [
       "Designed RESTful APIs with Node.js/Express.js, enhancing transaction flow and integration, while collaborating closely with internal teams to meet product needs.",
     ],
   },
-  {
-    company: "Gemma",
-    title: "Frontend Developer",
-    start: "Jan 2020",
-    end: "May 2021",
-    desc: [
-      "Improved user engagement and reduced page load times by 15% through advanced UI components in React.js/Redux and Redis caching.",
-      "Enhanced data visualization capabilities and application scalability by integrating Chart.js with Google Charts and migrating to a modern React architecture.",
-    ],
-  },
+  // {
+  //   company: "Gemma",
+  //   title: "Frontend Engineer",
+  //   start: "Jan 2020",
+  //   end: "May 2021",
+  //   desc: [
+  //     "Improved user engagement and reduced page load times by 15% through advanced UI components in React.js/Redux and Redis caching.",
+  //     "Enhanced data visualization capabilities and application scalability by integrating Chart.js with Google Charts and migrating to a modern React architecture.",
+  //   ],
+  // },
 ];

@@ -13,7 +13,7 @@ const Intro = () => {
           Hi, I&apos;m Omar
         </h1>
         <h2 className="text-3xl msm:text-4xl w-fit md:text-5xl md:mb-6 xl:text-6xl">
-          I&apos;m a Full Stack Developer
+          I&apos;m a Full Stack Engineer
         </h2>
       </motion.div>
     </div>
